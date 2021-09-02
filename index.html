@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal website</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"><link rel="stylesheet" href="css/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+  <script src="js/scripts.js"></script>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="inner-width">
+      <a href="/" class="logo">Victor Irzunov</a>
+      <button class="menu-toggler">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="navbar-menu">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#education">Education</a>
+        <a href="#works">Works</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Home -->
+  <section id="home">
+    <div class="inner-width">
+      <div class="content">
+        <h1>Hi I'm </h1>
+        <div class="sm">
+          <a href="#" class="fab fa-facebook-f"></a>
+          <a href="#" class="fab fa-twitter"></a>
+          <a href="#" class="fab fa-instagram"></a>
+          <a href="#" class="fab fa-linkedin-in"></a>
+          <a href="#" class="fab fa-youtube"></a>
+        </div>
+        <div class="buttons">
+          <a href="#" class="button__contact" onclick="toglleBtn()">Contact me</a>
+          <a href="tel:+375333511597" class="button__contact2">📞 +375 33 351-15-97</a>
+          <a href="CV.docx" class="button__contact3" onclick="load()" download>Download CV</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Home -->
+  <section id="about">
+    <div class="inner-width">
+      <h1 class="section-title">About</h1>
+      <div class="about-content">
+        <img src="images/4.jpg" alt="" class="about-pic">
+        
+        <div class="about-text">
+          <h2>Hi! I'm Full Stack Developer</h2>
+          <h3>
+            <span>Front-end</span>
+            <span>Back-end</span>
+          </h3>
+          <p>Знание:</p>
+          <div class="carousel">
+            <a class="carousel-item" href="#one!"><img src="https://lorempixel.com/250/250/nature/1"></a>
+            <a class="carousel-item" href="#two!"><img src="https://lorempixel.com/250/250/nature/2"></a>
+            <a class="carousel-item" href="#three!"><img src="https://lorempixel.com/250/250/nature/3"></a>
+            <a class="carousel-item" href="#four!"><img src="https://lorempixel.com/250/250/nature/4"></a>
+            <a class="carousel-item" href="#five!"><img src="https://lorempixel.com/250/250/nature/5"></a>
+          </div>
+          <ul>
+            <li>
+              HTML, CSS(Sass, Scss), SVG
+            </li>
+            <li>
+              Javascript (сделал более 10 сайтов)
+            </li>
+            <li>
+              React
+              <span>Сделал адаптивное web приложение интернет магазина с:</span>
+              <ul>
+                <li>
+                  выбором языка
+                </li>
+                <li>
+                  админ панелью
+                </li>
+                <li>
+                  определением места положения
+                </li>
+              </ul>
+              <span>для выполнения этой задачи изучил:</span>
+              <ul>
+                <li>Node.js</li>
+                <li>Express</li>
+                <li>PostgreSQL</li>
+                <li>React Bootstrap</li>
+                <li>запуск приложения на сервере</li>
+              </ul>
+              <span>для управления фронтенд-состоянием приложения использовал:</span>
+              <ul>
+                <li>MobX</li>
+              </ul>
+              <span>для авторизации пользователя использовал:</span>
+              <ul>
+                <li>JSON Web Token</li>
+              </ul>
+              <span>для валидации полей авторизации и регистрации пользователя использовал npm пакет:</span>
+              <ul>
+                <li>Express-validator</li>
+              </ul>
+              <span>для добовления товара в список сравнения использовал:</span>
+              <ul>
+                <li>Cookie</li>
+              </ul>
+              <span>для сжатия статических файлов использовал npm пакет:</span>
+              <ul>
+                <li>Сompression</li>
+              </ul>
+              <span>для отправки email использовал npm пакет:</span>
+              <ul>
+                <li>Nodemailer</li>
+              </ul>
+              <div>
+                Вот ссылка на web приложение: &nbsp;&nbsp;<a
+                  href="https://euro-app.site">https://euro-app.site</a><br />
+                Вот ссылка на GitHub: &nbsp;&nbsp;<a
+                  href="https://github.com/Victor-Irzunov/E-comerce-React-Node.js-PostgreSQL-.git">https://github.com/Victor-Irzunov/E-comerce-React-Node.js-PostgreSQL-.git</a><br />
+                <i>Логин администратора: q@tut.by<br />
+                  Пароль администратора: 11111</i><br />
+                Срок выполнения: 3 месяца
+              </div>
+            </li>
+            <li>
+              Node.js
+              <span>Cделал web приложение, для выполнения этой задачи изучил:</span>
+              <ul>
+                <li>
+                  Handlebars
+                </li>
+                <li>
+                  MongoDB
+                </li>
+              </ul>
+              <span>для авторизации пользователя использовал npm пакет:</span>
+              <ul>
+                <li>Express-session</li>
+              </ul>
+              <span>для избежания определённых атак и немного защитить приложение (путём добавления заголовков)
+                использовал npm пакет:</span>
+              <ul>
+                <li>Helmet</li>
+              </ul>
+              <span>для валидации полей авторизации и регистрации пользователя использовал npm пакет:</span>
+              <ul>
+                <li>Express-validator</li>
+              </ul>
+              <span>для сжатия статических файлов использовал npm пакет:</span>
+              <ul>
+                <li>Сompression</li>
+              </ul>
+              <span>для отправки email использовал npm пакет:</span>
+              <ul>
+                <li>Nodemailer</li>
+              </ul>
+              <div>
+                Вот ссылка на web приложение: &nbsp;&nbsp;<a
+                  href="https://quiet-gorge-08860.herokuapp.com">https://quiet-gorge-08860.herokuapp.com</a><br />
+                Вот ссылка на GitHub: &nbsp;&nbsp;<a
+                  href="https://github.com/Victor-Irzunov/e-commerce-application.git">https://github.com/Victor-Irzunov/e-commerce-application.git</a><br />
+                <i>Логин администратора: a@tut.by<br />
+                  Пароль администратора: 111</i><br />
+                Срок выполнения: 1 месяц
+              </div>
+            </li>
+            <li>
+              REST API
+              <span>Создал простое, но полноценное клиент-серверное web приложение (todo application), для выполнения этой задачи изучил:</span>
+              <ul>
+                <li>
+                  MySQL
+                </li>
+                <div>
+                  Вот ссылка на web приложение: &nbsp;&nbsp;<a
+                    href="https://mighty-falls-71399.herokuapp.com/">https://mighty-falls-71399.herokuapp.com/</a><br />
+                  Вот ссылка на GitHub: &nbsp;&nbsp;<a
+                    href="https://github.com/Victor-Irzunov/REST-API.git">https://github.com/Victor-Irzunov/REST-API.git</a><br />
+                  Срок выполнения: 1 неделя
+                </div>
+              </ul>
+            </li>
+            <li>
+              GraphQL
+                <div>
+                  Вот ссылка на GitHub: &nbsp;&nbsp;<a
+                    href="https://github.com/Victor-Irzunov/GraphQL.git">https://github.com/Victor-Irzunov/GraphQL.git</a><br />
+                  Срок выполнения: 3 дня
+                </div>
+              
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="skills">
+        <div class="skill">
+          <div class="skill-info">
+            <span>HTML</span>
+            <span>90%</span>
+          </div>
+          <div class="skill-bar html"></div>
+        </div>
+
+        <div class="skill">
+          <div class="skill-info">
+            <span>CSS</span>
+            <span>80%</span>
+          </div>
+          <div class="skill-bar css"></div>
+        </div>
+
+        <div class="skill">
+          <div class="skill-info">
+            <span>Javascript</span>
+            <span>70%</span>
+          </div>
+          <div class="skill-bar js"></div>
+        </div>
+
+        <div class="skill">
+          <div class="skill-info">
+            <span>React</span>
+            <span>70%</span>
+          </div>
+          <div class="skill-bar react"></div>
+        </div>
+
+        <div class="skill">
+          <div class="skill-info">
+            <span>Node.js</span>
+            <span>70%</span>
+          </div>
+          <div class="skill-bar node"></div>
+        </div>
+
+        <div class="skill">
+          <div class="skill-info">
+            <span>MySQL</span>
+            <span>80%</span>
+          </div>
+          <div class="skill-bar mysql"></div>
+        </div>
+        <div class="skill">
+          <div class="skill-info">
+            <span>NoSQL</span>
+            <span>75%</span>
+          </div>
+          <div class="skill-bar nosql"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="dark">
+    <div class="inner-width">
+      <h1 class="section-title">Services</h1>
+      <div class="services">
+        <div class="service">
+          <i class="icon fas fa-paint-brush"></i>
+          <h4>Design</h4>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+
+        <div class="service">
+          <i class="icon fas fa-pager"></i>
+          <h4>Build Websites</h4>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+
+        <div class="service">
+          <i class="icon fas fa-database"></i>
+          <h4>Manage Databases</h4>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+
+        <div class="service">
+          <i class="icon fab fa-android"></i>
+          <h4>Android Apps</h4>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+
+        <div class="service">
+          <i class="icon fas fa-credit-card"></i>
+          <h4>Ui Design</h4>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+
+        <div class="service">
+          <i class="icon fas fa-keyboard"></i>
+          <h4>Edit Texts</h4>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section id="education">
+    <div class="inner-width">
+      <h1 class="section-title">Education & Experiences</h1>
+      <div class="time-line">
+        <div class="block">
+          <h4>2018 - 2019</h4>
+          <h3>Software engineering</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At expedita maiores ullam voluptatum a nulla
+            aperiam enim eveniet adipisci ipsum.</p>
+        </div>
+
+        <div class="block">
+          <h4>2018 - 2019</h4>
+          <h3>Software engineering</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At expedita maiores ullam voluptatum a nulla
+            aperiam enim eveniet adipisci ipsum.</p>
+        </div>
+
+        <div class="block">
+          <h4>2018 - 2019</h4>
+          <h3>Software engineering</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At expedita maiores ullam voluptatum a nulla
+            aperiam enim eveniet adipisci ipsum.</p>
+        </div>
+
+        <div class="block">
+          <h4>2018 - 2019</h4>
+          <h3>Software engineering</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At expedita maiores ullam voluptatum a nulla
+            aperiam enim eveniet adipisci ipsum.</p>
+        </div>
+
+        <div class="block">
+          <h4>2018 - 2019</h4>
+          <h3>Software engineering</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At expedita maiores ullam voluptatum a nulla
+            aperiam enim eveniet adipisci ipsum.</p>
+        </div>
+
+        <div class="block">
+          <h4>2018 - 2019</h4>
+          <h3>Software engineering</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At expedita maiores ullam voluptatum a nulla
+            aperiam enim eveniet adipisci ipsum.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Works -->
+  <section id="works" class="dark">
+    <div class="inner-width">
+      <h1 class="section-title">Works</h1>
+      <div class="works">
+        <a href="images/works/1.jpg" class="work">
+          <img src="images/works/1.jpg" alt="">
+          <div class="info">
+            <h3>Work Title</h3>
+            <div class="cat">Music, Headset</div>
+          </div>
+        </a>
+
+        <a href="images/works/2.jpg" class="work">
+          <img src="images/works/2.jpg" alt="">
+          <div class="info">
+            <h3>Work Title</h3>
+            <div class="cat">Music, Headset</div>
+          </div>
+        </a>
+
+        <a href="images/works/3.jpg" class="work">
+          <img src="images/works/3.jpg" alt="">
+          <div class="info">
+            <h3>Work Title</h3>
+            <div class="cat">Music, Headset</div>
+          </div>
+        </a>
+
+        <a href="images/works/4.jpg" class="work">
+          <img src="images/works/4.jpg" alt="">
+          <div class="info">
+            <h3>Work Title</h3>
+            <div class="cat">Music, Headset</div>
+          </div>
+        </a>
+
+        <a href="images/works/5.jpg" class="work">
+          <img src="images/works/5.jpg" alt="">
+          <div class="info">
+            <h3>Work Title</h3>
+            <div class="cat">Music, Headset</div>
+          </div>
+        </a>
+
+        <a href="images/works/6.jpg" class="work">
+          <img src="images/works/6.jpg" alt="">
+          <div class="info">
+            <h3>Work Title</h3>
+            <div class="cat">Music, Headset</div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <div class="inner-width">
+      <h1 class="section-title">Get in touch</h1>
+      <div class="contact-info">
+        <div class="item">
+          <i class="fas fa-mobile-alt"></i>
+          +111 111111111
+        </div>
+
+        <div class="item">
+          <i class="fas fa-envelope"></i>
+          email@address.com
+        </div>
+
+        <div class="item">
+          <i class="fas fa-map-marker-alt"></i>
+          New York, United States
+        </div>
+      </div>
+
+      <form action="#" class="contact-form">
+        <input type="text" class="nameZone" placeholder="Your Full Name">
+        <input type="email" class="emailZone" placeholder="Your Email">
+        <input type="text" class="subjectZone" placeholder="Subject">
+        <textarea class="messageZone" placeholder="Message"></textarea>
+        <input type="submit" value="Send Message" class="btn">
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="inner-width">
+      <div class="copyright">
+        &copy; 2020 | Created & Designed By <a href="#">darkcode</a>
+      </div>
+      <div class="sm">
+        <a href="#" class="fab fa-facebook-f"></a>
+        <a href="#" class="fab fa-twitter"></a>
+        <a href="#" class="fab fa-instagram"></a>
+        <a href="#" class="fab fa-linkedin-in"></a>
+        <a href="#" class="fab fa-youtube"></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Go Top BTN -->
+  <button class="goTop fas fa-arrow-up"></button>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      let elems = document.querySelectorAll('.carousel');
+      let instances = M.Carousel.init(elems, {
+        fullWidth: false,
+        shift: 120,
+        padding: 100
+      });
+    })
+  </script>
+</body>
+
+</html>
