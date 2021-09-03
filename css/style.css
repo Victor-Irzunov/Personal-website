@@ -47,9 +47,6 @@ html{
 }
 
 .logo{
-  /* width: 44px;
-  height: 32px; */
-  /* background-image: url(../images/white-logo.png); */
   background-size: contain;
   color: #fff;
   font-size: 26px;
@@ -257,6 +254,136 @@ section{
   margin-right: 100px;
   overflow: hidden;
 }
+.collapsible{
+  margin-top: 50px;
+  
+}
+.collapsible.popout>li{
+  margin: 0px 0px 0px 0px;
+  position: relative;
+}
+.collapsible-header{
+  display: flex;
+  justify-content: space-between;
+}
+.collapsible-header-img{
+  display: flex;
+}
+.collapsible__title{
+  margin-top: 5px;
+}
+.collapsible__title4{
+  margin-top: 9px;
+}
+
+
+
+
+
+
+
+.arrow-4 {
+  position: relative;
+  cursor: pointer;
+  margin:20px;
+  width: 66px;
+  height: 30px;
+}
+.arrow-4-left {
+  position: absolute;
+  background-color: transparent;
+  top: 12px;
+  left: 0;
+  width: 41px;
+  height: 0px;
+  display: block;
+  transform: rotate( 
+35deg
+);
+  float: right;
+  border-radius: 2px;
+}
+.arrow-4-left:after {
+  content: "";
+  background-color: #48dbfb;
+  width: 22px;
+  height: 3px;
+  display: block;
+  float: right;
+  border-radius: 6px 10px 10px 6px;
+  transition: all 0.5s cubic-bezier(0.25, 1.7, 0.35, 0.8);
+  z-index: -1;
+}
+.arrow-4-right {
+  position: absolute;
+  background-color: transparent;
+  top: 17px;
+  left: 33px;
+  width: 21px;
+  height: 0px;
+  display: block;
+  transform: rotate( 
+-35deg
+);
+  float: right;
+  border-radius: 2px;
+}
+.arrow-4-right:after {
+  content: "";
+  background-color: #48dbfb;
+  width: 22px;
+  height: 3px;
+  display: block;
+  float: right;
+  border-radius: 10px 6px 6px 10px;
+  transition: all 0.5s cubic-bezier(0.25, 1.7, 0.35, 0.8);
+  z-index: -1;
+}
+.open .arrow-4-left:after {
+  transform-origin: center center;
+  transform: rotate(-70deg);
+}
+.open .arrow-4-right:after {
+  transform-origin: center center;
+  transform: rotate(70deg);
+}
+
+
+
+
+
+.img__html{
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+  display: inline;
+}
+.img__js{
+  width: 30px;
+  height: 30px;
+  margin-right: 15px;
+}
+.img__react{
+  width: 35px;
+  height: 35px;
+  margin-right: 12px;
+}
+.img__node{
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+.img__api{
+  width: 45px;
+  margin-right: 5px;
+}
+.img__graphql{
+  width: 30px;
+  height: 30px;
+  margin-right: 20px;
+}
+
+
 .about-text{
   flex: 1;
 }
@@ -296,12 +423,12 @@ section{
 .about-text ul ul li {
   margin-top: 5px;
 }
-.about-text span{
+/* .about-text span{
   margin-left: 10px;
   margin-top: 15px;
-}
+} */
 .about-text div{
-  margin-left: 10px;
+  /* margin-left: 10px; */
   margin-top: 15px;
 }
 .skills{
