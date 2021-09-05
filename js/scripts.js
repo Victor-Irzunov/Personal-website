@@ -2,15 +2,15 @@ $(document).ready(function () {
   $(window).scroll(function () {
     if (this.scrollY > 20) {
       $(".navbar").addClass("sticky");
-      $(".goTop").fadeIn();
+      $(".go__top").fadeIn();
     }
     else {
       $(".navbar").removeClass("sticky");
-      $(".goTop").fadeOut();
+      $(".go__top").fadeOut();
     }
   });
 
-  $(".goTop").click(function () { scroll(0, 0) });
+  $(".go__top").click(function () { scroll(0, 0) });
 
   $('.menu-toggler').click(function () {
     $(this).toggleClass("active");
@@ -50,4 +50,4 @@ function toggleOpen(i) {
 
 
 
-
+// password smtp: 2C6415DA197451850E2CF105647497D5EB6B

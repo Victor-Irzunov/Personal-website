@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="css/style.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
   <script src="js/scripts.js"></script>
 </head>
 
@@ -532,12 +533,12 @@
         </div>
       </div>
 
-      <form action="#" class="contact-form">
+      <form method="POST" class="contact-form">
         <input type="text" class="name__zone" placeholder="Your Full Name">
         <input type="email" class="email__zone" placeholder="Your Email">
         <input type="text" class="subject__zone" placeholder="Subject">
         <textarea class="message__zone" placeholder="Message"></textarea>
-        <input type="submit" value="Send Message" class="btn">
+        <input type="button" value="Send Message" onclick="sendEmail()" class="btn">
       </form>
     </div>
   </section>
@@ -630,7 +631,34 @@
       let sound = document.getElementById("audio")
       sound.play()
     })
+
+
+
+    function sendEmail() {
+      Email.send({
+        Host: "smtp.gmail.com",
+        Username: "victorirzunov@gmail.com",
+        Password: "qaz123-321",
+        To: 'victorirzunov@gmail.com',
+        From: "Irzunovv@gmail.com",
+        Subject: "This is the subject",
+        Body: "And this is the body"
+      }).then(
+        message => {
+          if(message == 'OK'){
+            alert('Успех')
+          }
+          else{
+            alert(message)
+          }
+          
+        }
+      )
+    }
+
+
   </script>
+  <!-- <script src="https://smtpjs.com/v3/smtp.js"></script> -->
 </body>
 
 </html>
