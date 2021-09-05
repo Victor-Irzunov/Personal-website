@@ -70,7 +70,7 @@
           <h2>Hi! I'm Front-end Developer</h2>
           <h3>
             <span>Front-end</span>
-            
+
           </h3>
           <p>Knowledge:</p>
           <ul class="collapsible popout">
@@ -86,7 +86,21 @@
                   <span class="arrow-4-right"></span>
                 </div>
               </div>
-              <div class="collapsible-body"><span>animation, button, paralax, 3D, neon, card, smoke</span></div>
+              <div class="collapsible-body">
+                <div class="collapsible-body-block">
+                  <div>
+                    <span>I can do:</span>
+                    <span class="text">WebSite, animation, unusual buttons, paralax, 3D, neon, card, smoke, video
+                      animation,
+                      text animation, unusual social icons, e-comerce card, mouse animation, scroll effect, svg
+                      animation,
+                      menuBar etc.</span>
+                  </div>
+                  <div onclick="reload()">
+                    <i class="fa fa-undo" aria-hidden="true"></i>
+                  </div>
+                </div>
+              </div>
             </li>
 
 
@@ -102,7 +116,12 @@
                 </div>
               </div>
 
-              <div class="collapsible-body"><span>сделал более 10 сайтов</span></div>
+              <div class="collapsible-body collapsible-body-js">
+                <div class="collapsible-body-cursor">
+                  <p>I have made more than 10 sites</p>
+                  <audio id="audio" src="sound.wav" autostart="false"></audio>
+                </div>
+              </div>
             </li>
 
 
@@ -294,12 +313,7 @@
         </div>
       </div>
 
-
-
-
-
-
-      <div class="skills">
+      <!-- <div class="skills">
         <div class="skill">
           <div class="skill-info">
             <span>HTML</span>
@@ -354,7 +368,7 @@
           </div>
           <div class="skill-bar nosql"></div>
         </div>
-      </div>
+      </div> -->
     </div>
   </section>
 
@@ -450,47 +464,47 @@
           <img src="images/works/scrin1.jpeg" alt="">
           <div class="info">
             <h3>E-comerce</h3>
-            <div class="cat"></div>
+            <div class="cat">React, Node.js</div>
           </div>
         </a>
 
         <a href="images/works/scrin2.jpeg" class="work">
           <img src="images/works/scrin2.jpeg" alt="">
           <div class="info">
-            <h3>Work Title</h3>
-            <div class="cat">Music, Headset</div>
+            <h3>Psychology</h3>
+            <div class="cat">HTML, CSS, JS</div>
           </div>
         </a>
 
         <a href="images/works/scrin3.jpeg" class="work">
           <img src="images/works/scrin3.jpeg" alt="">
           <div class="info">
-            <h3>Work Title</h3>
-            <div class="cat">Music, Headset</div>
+            <h3>Sport</h3>
+            <div class="cat">HTML, CSS, JS</div>
           </div>
         </a>
 
         <a href="images/works/scrin4.jpeg" class="work">
           <img src="images/works/scrin4.jpeg" alt="">
           <div class="info">
-            <h3>Work Title</h3>
-            <div class="cat">Music, Headset</div>
+            <h3>Movie</h3>
+            <div class="cat">HTML, CSS, JS</div>
           </div>
         </a>
 
         <a href="images/works/scrin5.jpeg" class="work">
           <img src="images/works/scrin5.jpeg" alt="">
           <div class="info">
-            <h3>Work Title</h3>
-            <div class="cat">Music, Headset</div>
+            <h3>Food</h3>
+            <div class="cat">HTML, CSS, JS</div>
           </div>
         </a>
 
         <a href="images/works/scrin6.jpeg" class="work">
           <img src="images/works/scrin6.jpeg" alt="">
           <div class="info">
-            <h3>Work Title</h3>
-            <div class="cat">Music, Headset</div>
+            <h3>IT Tech</h3>
+            <div class="cat">HTML, CSS, JS</div>
           </div>
         </a>
       </div>
@@ -504,25 +518,25 @@
       <div class="contact-info">
         <div class="item">
           <i class="fas fa-mobile-alt"></i>
-          +111 111111111
+          +375 33 351-15-97
         </div>
 
         <div class="item">
           <i class="fas fa-envelope"></i>
-          email@address.com
+          Irzunovv@gmail.com
         </div>
 
         <div class="item">
           <i class="fas fa-map-marker-alt"></i>
-          New York, United States
+          Minsk, Republic of Belarus
         </div>
       </div>
 
       <form action="#" class="contact-form">
-        <input type="text" class="nameZone" placeholder="Your Full Name">
-        <input type="email" class="emailZone" placeholder="Your Email">
-        <input type="text" class="subjectZone" placeholder="Subject">
-        <textarea class="messageZone" placeholder="Message"></textarea>
+        <input type="text" class="name__zone" placeholder="Your Full Name">
+        <input type="email" class="email__zone" placeholder="Your Email">
+        <input type="text" class="subject__zone" placeholder="Subject">
+        <textarea class="message__zone" placeholder="Message"></textarea>
         <input type="submit" value="Send Message" class="btn">
       </form>
     </div>
@@ -545,21 +559,77 @@
   </footer>
 
   <!-- Go Top BTN -->
-  <button class="goTop fas fa-arrow-up"></button>
+  <button class="go__top fas fa-arrow-up"></button>
 
 
 
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <script>
+    //accardion
     document.addEventListener('DOMContentLoaded', function () {
       var elem = document.querySelectorAll('.collapsible')
       var instances = M.Collapsible.init(elem)
     })
 
-    // $(".collapsible-header").click(function () {
-    //   $(this).toggleClass("open");
-    // });
+
+    //smoke
+    const text = document.querySelector('.text')
+    function reload() {
+      text.innerHTML = text.textContent.replace(/\S/g, `<span class='text__new'>$&</span>`)
+      const letters = document.querySelectorAll('.text__new')
+      for (let i = 0; i < letters.length; i++) {
+        letters[i].addEventListener("mouseover", function () {
+          letters[i].classList.add('active')
+        })
+      }
+    }
+    text.innerHTML = text.textContent.replace(/\S/g, "<span class='text__new'>$&</span>")
+    const letters = document.querySelectorAll('.text__new')
+    for (let i = 0; i < letters.length; i++) {
+      letters[i].addEventListener("mouseover", function () {
+        letters[i].classList.add('active')
+      })
+    }
+
+
+    //cursor
+    document.querySelector('.collapsible-body-cursor').addEventListener("click", function (e) {
+      let block = document.querySelector('.collapsible-body-cursor')
+      let bullet = document.createElement("span")
+      let x = e.offsetX
+      let y = e.offsetY
+      bullet.style.left = x + 'px'
+      bullet.style.top = y + 'px'
+      block.appendChild(bullet)
+      // setTimeout(function(){
+      //     },4000);
+
+      // appear blood on click
+      let images = [
+        'url("images/cursor/blood1.png")',
+        'url("images/cursor/blood2.png")',
+        'url("images/cursor/blood3.png")',
+        'url("images/cursor/blood4.png")',
+      ];
+
+      let blood = document.createElement("span")
+      blood.classList.add('blood')
+      let bg = images[Math.floor(Math.random() * images.length)]
+      blood.style.backgroundImage = bg
+
+      blood.style.left = Math.random() * innerWidth + "px"
+      blood.style.top = Math.random() * innerHeight + "px"
+      block.appendChild(blood)
+      setTimeout(function () {
+        blood.remove()
+        bullet.remove()
+      }, 4000)
+
+      // bullet Sound on click
+      let sound = document.getElementById("audio")
+      sound.play()
+    })
   </script>
 </body>
 

@@ -33,17 +33,21 @@ function load() {
 }
 
 function toggleOpen(i) {
-  
+
   if (i === 1) document.querySelector('.i1').classList.toggle('open')
   if (i === 2) document.querySelector('.i2').classList.toggle('open')
   if (i === 3) document.querySelector('.i3').classList.toggle('open')
   if (i === 4) document.querySelector('.i4').classList.toggle('open')
   if (i === 5) document.querySelector('.i5').classList.toggle('open')
   if (i === 6) document.querySelector('.i6').classList.toggle('open')
-  if (i !== 1)  document.querySelector('.i1').classList.remove('open')
+  if (i !== 1) document.querySelector('.i1').classList.remove('open')
   if (i !== 2) document.querySelector('.i2').classList.remove('open')
   if (i !== 3) document.querySelector('.i3').classList.remove('open')
   if (i !== 4) document.querySelector('.i4').classList.remove('open')
   if (i !== 5) document.querySelector('.i5').classList.remove('open')
   if (i !== 6) document.querySelector('.i6').classList.remove('open')
 }
+
+
+
+

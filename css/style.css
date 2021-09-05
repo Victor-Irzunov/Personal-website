@@ -135,14 +135,14 @@ html{
 
 @keyframes textanim{
   25%{
-    content: "A Full Stack Developer";
-  }
-  50%{
     content: "A Front-end Developer";
   }
-  75%{
-    content: "A Back-end Developer";
+  50%{
+    content: "A Soft Engineer";
   }
+  /* 75%{
+    content: "A Back-end Developer";
+  } */
 }
 .sm a{
   color: #fff;
@@ -281,8 +281,47 @@ section{
   margin-bottom: 20px;
 }
 
-
-
+.collapsible-body-block{
+  display: flex;
+}
+.collapsible-body-block .text
+{
+	position: relative;
+	color: #000;
+	margin: 25px;
+	user-select: none;
+}
+.collapsible-body .text span
+{
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+}
+.collapsible-body .text span.active
+{
+	animation: smoke 2s linear forwards;
+	transform-origin: bottom;
+}
+@keyframes smoke
+{
+	0%
+	{
+		opacity: 1;
+		filter: blur(0);
+		transform: translateX(0) translateY(0) rotate(0deg) scale(1);
+	}
+	50%
+	{
+		opacity: 1;
+		pointer-events: none;
+	}
+	100%
+	{
+		opacity: 0;
+		filter: blur(20px);
+		transform: translateX(300px) translateY(-300px) rotate(720deg) scale(4);
+	}
+}
 
 
 
@@ -379,6 +418,7 @@ section{
 }
 .img__api{
   width: 45px;
+  height: 45px;
   margin-right: 5px;
 }
 .img__graphql{
@@ -386,6 +426,82 @@ section{
   height: 30px;
   margin-right: 20px;
 }
+
+
+
+
+
+
+.collapsible-body-js{
+  padding: 0px 0px 0px 0px;
+}
+
+.collapsible-body-cursor
+{
+	position: relative;
+	height: 200px;
+	overflow: hidden;
+	cursor: url('../images/cursor/aim.png'), pointer;
+	background: url(../images/cursor/bg.png);
+	background-size: cover;
+	background-position: center;
+}
+.collapsible-body-cursor:active
+{
+	cursor: url('../images/cursor/aim_red.png'), pointer;
+}
+.collapsible-body-cursor p{
+  padding-left: 15px;
+}
+.collapsible-body-cursor span
+{
+	position: absolute;
+	width: 40px;
+	height: 38px;
+	background: url(../images/cursor/hole.png);	
+	transform: translate(28px,28px);
+	pointer-events: none;
+	animation: fadeOut 4s linear forwards;
+}
+
+.collapsible-body-cursor .blood
+{
+	position: absolute;
+	display: inline-block;
+	width: 400px;
+	height: 400px;
+	z-index: 1000;
+	background-size: cover;
+	transform: translate(-50%,-50%);
+	pointer-events: none;
+}
+@keyframes fadeOut
+{
+	0%,50%
+	{
+		opacity: 1;
+	}
+	100%
+	{
+		opacity: 0;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .about-text{
@@ -396,8 +512,8 @@ section{
   color: #444;
   font-size: 16px;
 }
-.about-text h3 span:nth-child(1)::before,
-.about-text h3 span:nth-child(1):after{
+.about-text h3 span:nth-child(1)::before
+{
   content: "";
   width: 6px;
   height: 6px;
@@ -434,14 +550,9 @@ section{
 .about-text ul ul li {
   margin-top: 5px;
 }
-/* .about-text span{
-  margin-left: 10px;
-  margin-top: 15px;
+/* .about-text div{
+  
 } */
-.about-text div{
-  /* margin-left: 10px; */
-  margin-top: 15px;
-}
 .skills{
   margin-top: 40px;
   display: flex;
@@ -693,11 +804,11 @@ section.dark .section-title::after{
   color: #fff;
 }
 
-.nameZone, .emailZone{
+.name__zone, .email__zone{
   max-width: calc(50% - 10px);
 }
 
-.messageZone{
+.message__zone{
   min-height: 200px;
   resize: vertical;
 }
@@ -737,7 +848,7 @@ footer{
   font-weight: 500;
 }
 
-.goTop{
+.go__top{
   position: fixed;
   z-index: 999;
   bottom: 40px;
@@ -847,7 +958,7 @@ footer{
     width: 100%;
   }
 
-  .nameZone, .emailZone{
+  .name__zone, .email__zone{
     max-width: 100%;
   }
 }
