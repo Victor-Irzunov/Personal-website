@@ -862,7 +862,7 @@ footer{
   display: none;
 }
 
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1430px){
   .navbar {
     padding: 10px 0;
   }
