@@ -48,7 +48,7 @@
           <a href="#" class="fab fa-facebook-f"></a>
           <a href="#" class="fab fa-twitter"></a>
           <a href="#" class="fab fa-instagram"></a>
-          <a href="#" class="fab fa-linkedin-in"></a>
+          <a href="https://www.linkedin.com/in/victor-irzunov-0605a2bb/" class="fab fa-linkedin-in"></a>
           <a href="#" class="fab fa-youtube"></a>
         </div>
         <div class="buttons">
@@ -508,6 +508,30 @@
             <div class="cat">HTML, CSS, JS</div>
           </div>
         </a>
+
+        <a href="images/works/scrin7.jpeg" class="work">
+          <img src="images/works/scrin7.jpeg" alt="">
+          <div class="info">
+            <h3>Phone sales</h3>
+            <div class="cat">HTML, CSS, JS</div>
+          </div>
+        </a>
+
+        <a href="images/works/scrin9.jpeg" class="work">
+          <img src="images/works/scrin9.jpeg" alt="">
+          <div class="info">
+            <h3>Portfolio</h3>
+            <div class="cat">HTML, CSS, JS</div>
+          </div>
+        </a>
+
+        <a href="images/works/scrin8.jpeg" class="work">
+          <img src="images/works/scrin8.jpeg" alt="">
+          <div class="info">
+            <h3>Gift shop</h3>
+            <div class="cat">HTML, CSS, JS</div>
+          </div>
+        </a>
       </div>
     </div>
   </section>
@@ -534,10 +558,10 @@
       </div>
 
       <form method="POST" class="contact-form">
-        <input type="text" class="name__zone" placeholder="Your Full Name">
-        <input type="email" class="email__zone" placeholder="Your Email">
-        <input type="text" class="subject__zone" placeholder="Subject">
-        <textarea class="message__zone" placeholder="Message"></textarea>
+        <input type="text" class="name__zone" id="name" placeholder="Your Full Name">
+        <input type="email" class="email__zone" id="email" placeholder="Your Email">
+        <input type="text" class="subject__zone" id="subject" placeholder="Subject">
+        <textarea class="message__zone" id="message" placeholder="Message"></textarea>
         <input type="button" value="Send Message" onclick="sendEmail()" class="btn">
       </form>
     </div>
@@ -547,13 +571,13 @@
   <footer>
     <div class="inner-width">
       <div class="copyright">
-        &copy; 2020 | Created & Designed By <a href="#">darkcode</a>
+        &copy; 2021| Created & Designed By <a href="#">Victor Irzunov</a>
       </div>
       <div class="sm">
         <a href="#" class="fab fa-facebook-f"></a>
         <a href="#" class="fab fa-twitter"></a>
         <a href="#" class="fab fa-instagram"></a>
-        <a href="#" class="fab fa-linkedin-in"></a>
+        <a href="https://www.linkedin.com/in/victor-irzunov-0605a2bb/" class="fab fa-linkedin-in"></a>
         <a href="#" class="fab fa-youtube"></a>
       </div>
     </div>
@@ -637,16 +661,21 @@
     function sendEmail() {
       Email.send({
         Host: "smtp.gmail.com",
-        Username: "victorirzunov@gmail.com",
-        Password: "qaz123-321",
+        Username: "Irzunovv@gmail.com",
+        Password: "jyddjkwqtenzyhfu",
         To: 'victorirzunov@gmail.com',
-        From: "Irzunovv@gmail.com",
-        Subject: "This is the subject",
-        Body: "And this is the body"
+        From: document.getElementById('email').value,
+        name: document.getElementById('name').value,
+        Subject: document.getElementById('subject').value,
+        Body: document.getElementById('message').value
       }).then(
         message => {
           if(message == 'OK'){
             alert('Успех')
+            document.getElementById('name').value = ''
+            document.getElementById('email').value = ''
+            document.getElementById('subject').value = ''
+            document.getElementById('message').value = ''
           }
           else{
             alert(message)
@@ -655,10 +684,7 @@
         }
       )
     }
-
-
   </script>
-  <!-- <script src="https://smtpjs.com/v3/smtp.js"></script> -->
 </body>
 
 </html>
