@@ -104,7 +104,7 @@ html{
 #home{
   height: 100vh;
   min-height: 500px;
-  background: url(../images/bg.jpg) no-repeat center;
+  background: url(bg1.jpg) no-repeat center;
   background-size: cover;
   background-attachment: fixed;
   position: relative;
@@ -441,14 +441,14 @@ section{
 	position: relative;
 	height: 200px;
 	overflow: hidden;
-	cursor: url('../images/cursor/aim.png'), pointer;
-	background: url(../images/cursor/bg.png);
+	cursor: url('aim.png'), pointer;
+	background: url(bg.png);
 	background-size: cover;
 	background-position: center;
 }
 .collapsible-body-cursor:active
 {
-	cursor: url('../images/cursor/aim_red.png'), pointer;
+	cursor: url('aim_red.png'), pointer;
 }
 .collapsible-body-cursor p{
   padding-left: 15px;
@@ -458,7 +458,7 @@ section{
 	position: absolute;
 	width: 40px;
 	height: 38px;
-	background: url(../images/cursor/hole.png);	
+	background: url(hole.png);	
 	transform: translate(28px,28px);
 	pointer-events: none;
 	animation: fadeOut 4s linear forwards;
@@ -486,23 +486,6 @@ section{
 		opacity: 0;
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .about-text{
   flex: 1;
@@ -546,13 +529,9 @@ section{
   margin-left: 45px;
 }
 
-
 .about-text ul ul li {
   margin-top: 5px;
 }
-/* .about-text div{
-  
-} */
 .skills{
   margin-top: 40px;
   display: flex;
@@ -842,7 +821,7 @@ section.dark .section-title::after{
 }
 
 footer{
-  background: url(../images/bg.jpg) no-repeat center;
+  background: url(bg1.jpg) no-repeat center;
   color: #fff;
   padding: 80px 0;
   text-align: center;

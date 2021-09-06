@@ -29,7 +29,7 @@ function toglleBtn() {
   document.querySelector('.button__contact2').classList.toggle('active')
 }
 function load() {
-  document.querySelector('.button__contact3').innerHTML = 'Download CV 😀'
+  document.querySelector('.button__contact3').innerHTML = 'Download CV 😊'
 }
 
 function toggleOpen(i) {
@@ -47,7 +47,3 @@ function toggleOpen(i) {
   if (i !== 5) document.querySelector('.i5').classList.remove('open')
   if (i !== 6) document.querySelector('.i6').classList.remove('open')
 }
-
-
-
-// password smtp: 2C6415DA197451850E2CF105647497D5EB6B
