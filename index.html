@@ -275,18 +275,19 @@
               <div class="collapsible-body"><span> <span>I created a simple, but full-fledged client-server web
                     application
                     (todo application), to perform this task, I studied:</span>
-                  <ul>
+                  <ul class="ul__mysql">
                     <li>
                       MySQL
                     </li>
-                    <div>
-                      Here is the link to the web application: &nbsp;&nbsp;<a
-                        href="https://mighty-falls-71399.herokuapp.com/">https://mighty-falls-71399.herokuapp.com/</a><br />
-                      Here is the link to GitHub: &nbsp;&nbsp;<a
-                        href="https://github.com/Victor-Irzunov/REST-API.git">https://github.com/Victor-Irzunov/REST-API.git</a><br />
-                      Deadline: 1 week
-                    </div>
                   </ul>
+                  <div>
+                    Here is the link to the web application: &nbsp;&nbsp;<a
+                      href="https://mighty-falls-71399.herokuapp.com/">https://mighty-falls-71399.herokuapp.com/</a><br />
+                    Here is the link to GitHub: &nbsp;&nbsp;<a
+                      href="https://github.com/Victor-Irzunov/REST-API.git">https://github.com/Victor-Irzunov/REST-API.git</a><br />
+                    Deadline: 1 week
+                  </div>
+
                 </span></div>
             </li>
 
@@ -465,7 +466,8 @@
           <img src="scrin1.jpeg" alt="">
           <div class="info">
             <h3>E-comerce</h3>
-            <div class="cat">React, Node.js</div>
+            <div class="cat">React, Node.js
+            </div>
           </div>
         </a>
 
@@ -668,7 +670,7 @@
       }).then(
         message => {
           if (message == 'OK') {
-            alert('Успех')
+            alert('The email was sent successfully')
             document.getElementById('name').value = ''
             document.getElementById('email').value = ''
             document.getElementById('subject').value = ''

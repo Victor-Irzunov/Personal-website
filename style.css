@@ -104,7 +104,7 @@ html{
 #home{
   height: 100vh;
   min-height: 500px;
-  background: url(bg1.jpg) no-repeat center;
+  background: url(img__bg.jpeg) no-repeat center;
   background-size: cover;
   background-attachment: fixed;
   position: relative;
@@ -519,7 +519,10 @@ section{
 .about-text ul li span{ 
   display: block;
 }
-
+.collapsible-body .ul__mysql li{
+  list-style-type: square;
+  margin-left: 30px;
+}
 .about-text .ul-li li{
   list-style-type: square;
   margin-left: 30px;
@@ -646,7 +649,12 @@ section.dark .section-title::after{
   justify-content: space-between;
   flex-wrap: wrap;
 }
-
+.works__a{
+  z-index: 1000;
+}
+.works__a:hover{
+  color: #ff0080;
+}
 .block{
   width: calc(50% - 20px);
   background-color: #fff;
@@ -821,7 +829,7 @@ section.dark .section-title::after{
 }
 
 footer{
-  background: url(bg1.jpg) no-repeat center;
+  background: url(img__bg.jpeg) no-repeat center;
   color: #fff;
   padding: 80px 0;
   text-align: center;
@@ -854,6 +862,11 @@ footer{
   display: none;
 }
 
+@media screen and (max-width: 1024px){
+  .navbar {
+    padding: 10px 0;
+  }
+}
 @media screen and (max-width: 980px){
   .menu-toggler{
     display: block;
@@ -875,6 +888,10 @@ footer{
     display: block;
     font-size: 30px;
     margin: 30px 0;
+  }
+  .about-text {
+    text-align: left;
+    flex: 100%;
   }
 
   .sticky .navbar-menu{
@@ -907,11 +924,6 @@ footer{
     margin: 0 auto 60px;
   }
 
-  .about-text{
-    flex: 100%;
-    text-align: center;
-  }
-
   .service{
     width: calc(50% - 20px);
   }
@@ -931,6 +943,11 @@ footer{
   }
 }
 
+@media screen and (max-width: 768px){
+  .sticky {
+    padding: 10px 0;
+}
+}
 @media screen and (max-width: 600px){
   .inner-width{
     padding: 0 20px;
@@ -951,5 +968,16 @@ footer{
   .name__zone, .email__zone{
     max-width: 100%;
   }
+}
+
+@media screen and (max-width: 575px){
+  .about-text h2 {
+    font-size: 40px;
+}
+}
+@media screen and (max-width: 414px){
+  .collapsible-body-block .text {
+    margin: 8px;
+}
 }
 
