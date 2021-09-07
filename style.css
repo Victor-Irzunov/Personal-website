@@ -129,16 +129,16 @@ html{
 }
 
 #home .content h1::after{
-  content: "Developer";
+  content: "a Developer";
   animation: textanim 10s linear infinite;
 }
 
 @keyframes textanim{
   25%{
-    content: "A Front-end Developer";
+    content: "a Front-end Developer";
   }
   50%{
-    content: "A Soft Engineer";
+    content: "a Software engineer";
   }
   /* 75%{
     content: "A Back-end Developer";
