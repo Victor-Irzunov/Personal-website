@@ -28,7 +28,7 @@ html{
   position: fixed;
   background-color: transparent;
   width: 100%;
-  padding: 30px 0;
+  padding: 10px 0;
   top: 0;
   z-index: 999;
   transition: .3s linear;
@@ -523,18 +523,31 @@ section{
   list-style-type: square;
   margin-left: 30px;
 }
+.about-text .ul-li
+{
+  margin-top: 10px;
+}
 .about-text .ul-li li{
   list-style-type: square;
   margin-left: 30px;
 }
 .about-text .ul-li ul li{
   list-style-type: circle;
-  margin-left: 45px;
+  margin-left: 50px;
+}
+.about-text .ul-li ul ul li{
+  list-style-type: disc;
+  margin-left: 67px;
 }
 
 .about-text ul ul li {
   margin-top: 5px;
 }
+.collapsible-body-link i{
+  font-size: 14px;
+}
+
+
 .skills{
   margin-top: 40px;
   display: flex;
@@ -862,11 +875,6 @@ footer{
   display: none;
 }
 
-@media screen and (max-width: 1430px){
-  .navbar {
-    padding: 10px 0;
-  }
-}
 @media screen and (max-width: 980px){
   .menu-toggler{
     display: block;
