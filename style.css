@@ -134,9 +134,9 @@ html{
 }
 
 @keyframes textanim{
-  25%{
+  /* 25%{
     content: "a Front-end Developer";
-  }
+  } */
   50%{
     content: "a Software engineer";
   }
