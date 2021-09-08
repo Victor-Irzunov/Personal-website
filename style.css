@@ -107,6 +107,7 @@ html{
   background: url(img__bg.jpeg) no-repeat center;
   background-size: cover;
   background-attachment: fixed;
+
   position: relative;
 }
 
@@ -950,6 +951,21 @@ footer{
     margin: 10px 0;
   }
 }
+
+/* 1 */
+@media (hover: none) {
+  #home {
+      background-attachment: scroll;
+  }
+}
+/* 2 */
+/* блок fixed */
+/* 3 */
+/* @media screen and (min-device-width: 481px) {
+  background-image: url(design/background.jpg);
+} */
+
+
 
 @media screen and (max-width: 768px){
   .sticky {
