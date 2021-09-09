@@ -129,22 +129,22 @@ html{
   margin-bottom: 60px;
 }
 
-#home .content h1::after{
+/* #home .content h1::after{
   content: "a Developer";
   animation: textanim 10s linear infinite;
-}
+} */
 
-@keyframes textanim{
-  /* 25%{
+/* @keyframes textanim{
+  25%{
     content: "a Front-end Developer";
-  } */
+  }
   50%{
     content: "a Software engineer";
   }
-  /* 75%{
+  75%{
     content: "A Back-end Developer";
-  } */
-}
+  }
+} */
 .sm a{
   color: #fff;
   font-size: 22px;
@@ -520,10 +520,7 @@ section{
 .about-text ul li span{ 
   display: block;
 }
-.collapsible-body .ul__mysql li{
-  list-style-type: square;
-  margin-left: 30px;
-}
+
 .about-text .ul-li
 {
   margin-top: 10px;
@@ -547,7 +544,10 @@ section{
 .collapsible-body-link i{
   font-size: 14px;
 }
-
+.collapsible-body .ul__mysql li{
+  list-style-type: square;
+  margin-left: 30px;
+}
 
 .skills{
   margin-top: 40px;
