@@ -129,22 +129,6 @@ html{
   margin-bottom: 60px;
 }
 
-/* #home .content h1::after{
-  content: "a Developer";
-  animation: textanim 10s linear infinite;
-}
-
-@keyframes textanim{
-  25%{
-    content: "a Front-end Developer";
-  }
-  50%{
-    content: "a Software engineer";
-  }
-  75%{
-    content: "A Back-end Developer";
-  }
-} */
 .sm a{
   color: #fff;
   font-size: 22px;
@@ -427,11 +411,6 @@ section{
   height: 30px;
   margin-right: 20px;
 }
-
-
-
-
-
 
 .collapsible-body-js{
   padding: 0px 0px 0px 0px;
