@@ -18,7 +18,7 @@
   <script src="scripts.js"></script>
 </head>
 
-<!-- 08.09.2021/18:43 -->
+<!-- 14.09.2021 -->
 
 <body>
   <!-- Navbar -->
@@ -35,7 +35,7 @@
         <a href="#about">About</a>
         <a href="#services">Services</a>
         <a href="#education">Education</a>
-        <a href="#works">Works</a>
+        <a href="#works">Portfolio</a>
         <a href="#contact">Contact</a>
       </div>
     </div>
@@ -121,7 +121,7 @@
 
               <div class="collapsible-body collapsible-body-js">
                 <div class="collapsible-body-cursor">
-                  <p>I’ve created more than ten websites
+                  <p>I’ve created more than ten websites.
                   </p>
                   <audio id="audio" src="sound.wav" autostart="false"></audio>
                 </div>
@@ -375,16 +375,6 @@
           </ul>
         </div>
       </div>
-
-      <!--       
-        <div class="skill">
-          <div class="skill-info">
-            <span>React</span>
-            <span>70%</span>
-          </div>
-          <div class="skill-bar react"></div>
-        </div> -->
-
     </div>
   </section>
 
@@ -657,8 +647,6 @@
       bullet.style.left = x + 'px'
       bullet.style.top = y + 'px'
       block.appendChild(bullet)
-      // setTimeout(function(){
-      //     },4000);
 
       // appear blood on click
       let images = [
@@ -685,8 +673,7 @@
       sound.play()
     })
 
-
-
+    //email
     function sendEmail() {
       Email.send({
         Host: "smtp.gmail.com",
@@ -709,7 +696,6 @@
           else {
             alert(message)
           }
-
         }
       )
     }
