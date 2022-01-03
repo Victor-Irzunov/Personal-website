@@ -128,7 +128,9 @@ html{
   font-size: 60px;
   margin-bottom: 60px;
 }
-
+.fab.fa-twitter, .fab.fa-youtube{
+  color: #808080;
+}
 /* #home .content h1::after{
   content: "a Developer";
   animation: textanim 10s linear infinite;
@@ -151,7 +153,10 @@ html{
   margin: 0 10px;
   transition: .2s linear;
 }
-.sm a:hover{
+/* .sm a:hover{
+  color: #48dbfb;
+} */
+.fab.fa-linkedin-in:hover,.fab.fa-instagram:hover,.fab.fa-facebook-f:hover{
   color: #48dbfb;
 }
 #home .buttons{
@@ -427,7 +432,12 @@ section{
   height: 30px;
   margin-right: 20px;
 }
-
+.img__type{
+  width: 30px;
+  height: 30px;
+  margin-right: 20px;
+  border-radius: 4px;
+}
 
 
 
