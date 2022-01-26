@@ -129,13 +129,35 @@ html{
   margin-bottom: 60px;
 }
 
+.fab.fa-twitter, .fab.fa-youtube{
+  color: #808080;
+}
+/* #home .content h1::after{
+  content: "a Developer";
+  animation: textanim 10s linear infinite;
+}
+
+@keyframes textanim{
+  25%{
+    content: "a Front-end Developer";
+  }
+  50%{
+    content: "a Software engineer";
+  }
+  75%{
+    content: "A Back-end Developer";
+  }
+} */
 .sm a{
   color: #fff;
   font-size: 22px;
   margin: 0 10px;
   transition: .2s linear;
 }
-.sm a:hover{
+/* .sm a:hover{
+  color: #48dbfb;
+} */
+.fab.fa-linkedin-in:hover,.fab.fa-instagram:hover,.fab.fa-facebook-f:hover{
   color: #48dbfb;
 }
 #home .buttons{
@@ -410,6 +432,13 @@ section{
   width: 30px;
   height: 30px;
   margin-right: 20px;
+}
+
+.img__type{
+  width: 30px;
+  height: 30px;
+  margin-right: 20px;
+  border-radius: 4px;
 }
 
 .collapsible-body-js{
