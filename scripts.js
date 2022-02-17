@@ -1,4 +1,5 @@
 $(document).ready(function () {
+  // detectOS()
   $(window).scroll(function () {
     if (this.scrollY > 20) {
       $(".navbar").addClass("sticky");
@@ -29,7 +30,19 @@ function toglleBtn() {
   document.querySelector('.button__contact2').classList.toggle('active')
 }
 function load() {
-  document.querySelector('.button__contact3').innerHTML = 'Download CV 😊'
+  const link = document.querySelector('.button__contact3')
+  link.innerHTML = 'Download CV 😊'
+  const platform = navigator.platform.toLowerCase(),
+    iosPlatforms = ['iphone', 'ipad', 'ipod', 'ipod touch'];
+
+  if (platform.includes('mac')) return link.setAttribute('href', "CV_Irzunov_Victor_17.02.2022.pages")
+    ;
+  if (iosPlatforms.includes(platform)) return console.log('iOS')
+  if (platform.includes('win')) return link.setAttribute('href', "CV_Victor_Irzunov1.docx")
+  // if (/android/.test(navigator.userAgent.toLowerCase())) return 'Android';
+  // if (/linux/.test(platform)) return 'Linux';
+
+  return 'unknown'
 }
 
 function toggleOpen(i) {
@@ -47,3 +60,17 @@ function toggleOpen(i) {
   if (i !== 5) document.querySelector('.i5').classList.remove('open')
   if (i !== 6) document.querySelector('.i6').classList.remove('open')
 }
+
+// function detectOS() {
+//   const platform = navigator.platform.toLowerCase(),
+//     iosPlatforms = ['iphone', 'ipad', 'ipod', 'ipod touch'];
+
+//   if (platform.includes('mac')) return console.log('MacOS');
+//   ;
+//   if (iosPlatforms.includes(platform)) return console.log('iOS')
+//   if (platform.includes('win')) return console.log('Windows')
+//   // if (/android/.test(navigator.userAgent.toLowerCase())) return 'Android';
+//   // if (/linux/.test(platform)) return 'Linux';
+
+//   return 'unknown'
+// }
