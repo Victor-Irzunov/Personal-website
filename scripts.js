@@ -38,7 +38,7 @@ function load() {
   if (platform.includes('mac')) return link.setAttribute('href', "CV_Irzunov_Victor_17.02.2022.pages")
     ;
   if (iosPlatforms.includes(platform)) return console.log('iOS')
-  if (platform.includes('win')) return link.setAttribute('href', "CV_Victor_Irzunov1.docx")
+  if (platform.includes('win')) return link.setAttribute('href', "CV_Victor_Irzunov.docx")
   // if (/android/.test(navigator.userAgent.toLowerCase())) return 'Android';
   // if (/linux/.test(platform)) return 'Linux';
 
